@@ -33,3 +33,8 @@ When a job has been done, the state of the job is set to "done" and the state of
 At any moment in time there may be more jobs to be run than suitable copiers available. The order in which the jobs are run is described in the task-specific information given below.
 
 You may assume for this coursework that there is always at least one suitable copier for every job.
+
+#Usage
+
+Compile and run TesterClass.java for a gui (which demostrates only some of the functionality)
+Compile and run TesterClassConsole.java to test all functionality of program
