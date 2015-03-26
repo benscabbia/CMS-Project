@@ -270,11 +270,11 @@ public class CopierSystemImplementation implements CopierSystem
     }
 
     //Helper Methods
-    /** Get the job by the id
+    /** Get the job by the id. Changed to projected to allow TesterClassConsole to use method. 
      * @param id is the id for a given job
      * @return returns the job object of the given id 
      */
-    private Job getJobById(int id){
+    protected Job getJobById(int id){
         return allJobs.get(id);             
     }
 
@@ -460,6 +460,11 @@ public class CopierSystemImplementation implements CopierSystem
                 job.addCopierAndCost(hqCopier.getId(), cost);
             }
         }
+    }
+    //Used for Test Method 1
+    public CopierAvailabilityStatus getCopierStatus(String copierId){
+        Copier copier = getCopierById(copierId);
+        return copier.getCopierStatus();
     }
 }
 
